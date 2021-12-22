@@ -1716,6 +1716,14 @@ ol {
   overflow: hidden;
   padding-top: 7px;
 }
+.contact__widget__item__text a{
+  color: whitesmoke;
+}
+
+.contact__widget__item__text a:hover{
+  color: dodgerblue;
+}
+
 .contact__widget__item__text h4 {
   font-size: 22px;
   color: #ffffff;
