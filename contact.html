@@ -84,51 +84,25 @@
     </div>
     <!-- Breadcrumb End -->
 
-    <!-- Contact Widget Section Begin -->
-    <section class="contact-widget spad">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-4 col-md-6 col-md-6 col-md-3">
-                    <div class="contact__widget__item">
-                        <div class="contact__widget__item__icon">
-                            <i class="fa fa-phone"></i>
-                        </div>
-                        <div class="contact__widget__item__text">
-                            <h4>Numéro</h4>
-                            <a href="tel:0663107084">+33-6-63-10-70-84</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-md-6 col-md-3">
-                    <div class="contact__widget__item">
-                        <div class="contact__widget__item__icon">
-                            <i class="fa fa-at"></i>
-                        </div>
-                        <div class="contact__widget__item__text">
-                            <h4>Email</h4>
-                            <a href="mailto:kadersabi.106@gmail.com">Kadersabi.106@gmail.com</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Contact Widget Section End -->
-
     <!-- Call To Action Section Begin -->
 
     <section class="contact spad">
-        <h3 id="contact__annoncement">Bientôt disponible sur le futur site <a href="http://abdelkader-sabi.free.fr/">abdelkader-sabi.free.fr</a>.</h3>
-        <div class="container">
+        <div class="container" style="margin-top: 5%">
             <div class="row justify-content-center">
                 <div class="col-lg-6 col-md-6">
                     <div class="contact__form">
                         <h3>Envoyez moi un message</h3>
-                        <form action="#">
-                            <input type="text" placeholder="Nom" disabled="true">
-                            <input type="email" placeholder="Email" required disabled="true">
-                            <textarea placeholder="Message" required disabled="true"></textarea>
-                            <button type="submit" id="btn-contact" class="site-btn" disabled="true">Envoyez</button>
+                        <form action="https://mailthis.to/Custromix"
+                              method="POST" encType="multipart/form-data">
+                            <input type="text" name="name" placeholder="Votre nom">
+                            <input type="text" name="_subject" placeholder="L'objet de la demande">
+                            <input type="email" name="_replyto" placeholder="Votre email afin de vous recontacter">
+                            <textarea name="message" placeholder="Rédigez votre message"></textarea>
+                            <input type="hidden" name="file" placeholder="Attachments (optional)">
+                            <input type="hidden" name="_after" value="https://custromix.github.io/">
+                            <input type="hidden" name="_honeypot" value="">
+                            <input type="hidden" name="_confirmation" value="Merci de m'avoir contacté je vous répondrais très prochainement ! ^_^">
+                            <input type="submit" value="Envoyez">
                         </form>
                     </div>
                 </div>

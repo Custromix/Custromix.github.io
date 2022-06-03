@@ -1758,10 +1758,10 @@ ol {
   width: 100%;
 }
 
-.contact__form{
+/*.contact__form{
   cursor: not-allowed;
   opacity: 0.5;
-}
+}*/
 
 .contact__form h3 {
   color: #ffffff;
@@ -1770,7 +1770,6 @@ ol {
   margin-bottom: 35px;
 }
 .contact__form form input {
-  cursor: not-allowed;
   height: 50px;
   width: 100%;
   border: 1px solid rgba(225, 225, 225, 0.5);
@@ -1792,7 +1791,6 @@ ol {
   border-color: #e1e1e1;
 }
 .contact__form form textarea {
-  cursor: not-allowed;
   height: 110px;
   width: 100%;
   border: 1px solid rgba(225, 225, 225, 0.5);
@@ -1808,7 +1806,7 @@ ol {
   -o-transition: all, 0.3s;
   transition: all, 0.3s;
 }
-.contact__form form textarea:placeholder {
+.contact__form form textarea::placeholder {
   color: #adadad;
 }
 .contact__form form textarea:focus {
